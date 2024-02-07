@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lobster&family=Merriweather:ital,wght@1,700&family=Oswald:wght@500&family=Poppins:ital,wght@0,400;1,700&family=Roboto:ital,wght@1,700&display=swap"
+      rel="stylesheet"/>
+    <style>
+     body{
+    background-color: #86a8cf;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-image: url('./Screenshot\ \(14\).png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 110%;
+}
+
+   span{
+    color: #86a8cf;
+    font-size: 50px;
+   }
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: #002366;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+
+ nav ul li a{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+}
+
+ nav ul li a:hover{
+    font-size: 1.04rem;
+    color: rgb(243, 237, 237);
+    
+}
+
+.about{
+   font-family: Merriweather;
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 39px;
+   background-color: #002366;
+   margin-top: 100px;
+   width: 100%;
+   }
+.container{
+  display: flex;
+  
+} 
+.left1{
+  width: 35%;
+  margin-right: 200px; 
+  font-family: system-ui, sans-serif;
+font-weight: 600;
+}
+
+.right{
+  display: flex;
+  margin-left: 60px;
+  width: 40%;
+}
+
+h3{
+  color: #002366;
+}
+h4{
+  color: #002366;
+}
+p{
+  color: #002366;
+  /* z-index: 1; */
+}
+
+div .two{
+  margin-left: 80px;
+}
+
+.one{
+  text-decoration: underline;
+  color: #042750;
+  /* z-index: -1; */
+}
+
+.two-1{
+  text-decoration: underline;
+  color: #042750;
+}
+
+
+#trailer{
+    height: 20px;
+    width:20px;
+    background-color: white;
+    border-radius: 20px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 10000;
+    pointer-events: none;
+    opacity: 0px;
+    transition: opacity 500ms ease;
+}
+body:hover > #trailer{
+    opacity: 1;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    background: #4070f4;
+    align-items: center;
+    justify-content: center;
+} */
+.container22{
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    background: #86a8cf;
+    margin: 0 15px;
+    padding: 10px 20px;
+    background-color: #002366;
+    border-radius: 7px;
+}
+.container22 .skill-box{
+    width: 100%;
+    margin: 25px 0;
+}
+.skill-box .title{
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+}
+.skill-box .skill-bar{
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: #000;
+}
+.skill-bar .skill-per{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 90%;
+    border-radius: 6px;
+    background: #86a8cf;
+    animation: progress 0.4s ease-in-out forwards;
+    opacity: 0;
+}
+.skill-per.css{
+    width: 70%;
+    animation-delay: 0.1s;
+}
+.skill-per.javascript{
+    width: 50%;
+    animation-delay: 0.2s;
+}
+.skill-per.nodejs{
+    width: 30%;
+    animation-delay: 0.3s;
+}
+@keyframes progress {
+    0%{
+        width: 0;
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.skill-per .tooltip{
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 9px;
+    font-weight: 500;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: #86a8cf;
+    z-index: 1;
+}
+.tooltip::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+    background-color: #86a8cf;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.h11{
+  font-size: 50px;
+  -webkit-text-stroke:rgb(190, 24, 24);
+}
+#progress{
+    position: fixed;
+    /* background: #194eb9; */
+    z-index: 1000;
+    bottom: 60px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    color: #1d002c;
+    /* color: black; */
+    cursor: pointer;
+    box-shadow: rgba(50,50,93,0.25)0px 50px 100px -20px,
+    rgba(0,0,0,0.3)0px 30px 60px -30px,
+    rgba(10,37,64,0.35)0px -2px 6px 0px inset;
+}
+
+
+#progress-value{
+    display: grid;
+    height: calc(100% - 12px);
+    width: calc(100% - 12px);
+    background: var(--gradient-color-bg);
+    border-radius: 50%;
+    color: #fff;
+    place-items: center;
+    font-size: 25px;
+}
+
+#progress-value img{
+    transform: rotate(269deg);
+    height: 40px;
+    width: 30px;
+}
+
+/* about */
+.about-btn button,.cvContent a{
+    background: var(--gradient-white-bg2);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #002366;
+    /* box-shadow: rgba(60,64,67,0.3)0px 1px 2px 0,
+                  rgba(60,64,67,0.15)0px 2px 6px 2px; */
+     box-shadow: 1px 1px 20px #0047ab,
+             1px 1px 40px #73c2fb;
+    margin-right: .5rem;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.about-btn button.active{
+    background: var(--gradient-color-bg);
+    color: #000;
+    font-weight: bold;
+}
+
+/* .text-box{
+    margin: .8rem 0;
+} */
+
+.content-btn > .content:not(:first-child){
+    display: none;
+}
+
+.about-btn button:hover{
+    /* box-shadow: var(--hover-box-shadow); */
+    color: #002366;
+    box-shadow: 1px 1px 20px rgb(124, 9, 9),
+             1px 1px 40px #042750;
+    transform: translateY(-10px);
+}
+
+.about-btn{
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  margin-bottom: 50px;
+  margin-left: 40px;
+  /* flex-direction: column; */
+  margin-top: 40px;
+}
+
+#para1{
+  color: #fff;
+  font-size: 30px;
+  font-family: Arial Rounded MT;
+font-weight: 600;
+-webkit-text-fill-color: #334d50,#cbcaa5;
+}
+
+#span1{
+  color: black;
+  font-size: 20px;
+  font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+font-weight: normal;
+}
+.container23{
+  display: block;
+    max-width: 500px;
+    width: 100%;
+    background-color: #002366;
+    /* background: black; */
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 7px;
+
+}
+
+.container24{
+  /* background: black; */
+  max-width: 500px;
+  width: 100%;
+    margin: 0 15px;
+    padding: 10px 20px;
+    background-color: #002366;
+    border-radius: 7px;
+}
+
+
+    </style>
+</head>
+<body>
+  <div id="trailer">
+
+  </div>    
+    <header>
+      <nav class="left"> Khaliq Hussain</nav>
+        <nav class="right2">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+
+    <section class="sec-first">
+          <h1 class="about"> We Create quality, cost effective designs built to enhance your&nbsp;<span>website!</span></h1>
+        <div class="container">
+          <div class="left1">
+            <h2> Specializing in refined digital web experience with a focus on animated, responsive and interactive content.</h2>
+            <h3 class="sec"> I can design web sites for all types that boost your growth.I have experience in creating websites and applications from scratch using HTML5, CSS3, JavaScript, PHP</h3>
+            <h3 class="sec"> Delivering highly executed front-end user experiences by paying close attention to thenuances of design, optimization, and performace.</h3>
+            <h3 class="para">I have been working as a Web Designer since the year 2005 and my passion is to become a web developer</h3>
+          </div>
+            <div class="right">
+              <div>
+                <h2 class="one">Availability</h2>
+                <!-- <h4> March 2019 -</h4> -->
+                <p>I am available for freelance work.</p>
+                <h2 class="one">Services</h2>
+                <h4>Web Design and Web-Development</h4>
+                <h2 class="one">Education</h2>
+                <h4>Bachelor's Degree in Computer Application</h4>
+                <p>Jamia Hamdard University (JHU) Delhi India </p>
+              </div>
+              <div class="two">
+                <h2 class="two-1">Skills</h2>
+                <h4>HTML</h4>
+                <h4>CSS</h4>
+                <h4>MYSQL</h4>
+                <h4>Javascript</h4>
+                <h4>Linux</h4>    
+                <h4>Programming Languages</h4>
+              </div>
+                
+          </div>
+      </section>
+
+      <section>
+        <div class="about-btn">
+          <button class="active">Main Skills</button>
+          <button>Awards</button>
+          <button>Education</button>
+        </div>
+        <div class="content-btn">
+
+          <div class="container22 content">
+            <div class="skill-box">
+              <span class="title">HTML</span>
+              <div class="skill-bar">
+                <span class="skill-per html">
+                  <span class="tooltip">90%</span>
+                </span>
+              </div>
+          </div>
+          <div class="skill-box">
+              <span class="title">CSS</span>
+              <div class="skill-bar">
+                  <span class="skill-per css">
+                      <span class="tooltip">70%</span>
+                  </span>
+              </div>
+          </div>
+          <div class="skill-box">
+              <span class="title">JavaScript</span>
+              <div class="skill-bar">
+                <span class="skill-per javascript">
+                      <span class="tooltip">50%</span>
+                  </span>
+              </div>
+            </div>
+          <div class="skill-box">
+              <span class="title">NodeJS</span>
+              <div class="skill-bar">
+                  <span class="skill-per nodejs">
+                    <span class="tooltip">30%</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="content container23">
+              <div class="text-box">
+                <p id="para1"> 1. Web Design Award</p>
+                <span id="span1">Award for creativity and user experience.</span>
+              </div>
+              <div class="text-box">
+                <p id="para1">2. Code and Development Award</p>
+                <span id="span1">Exceptional coding skills and develoment techniques</span>
+              </div>
+              <div class="text-box">
+                <p id="para1">3. Hackathons and coding Competiotions</p>
+                <span id="span1">Participating in hackathons and coding.</span>
+              </div>
+            </div>
+            
+            <div class="content container24">
+              <div class="text-box">
+                <p id="para1">1. Online Courses and Bootcamps</p>
+                <span id="span1">Delight the user and make it work.</span>
+              </div>
+              <div class="text-box">
+                <p id="para1">2. Internships and Work Experience</p>
+                <span id="span1">Website , Web Experience , ...</span>
+              </div>
+              <div class="text-box">
+                <p id="para1">3. Bachelor's Degree in Computer Science</p>
+                <span id="span1">I Like to move it move it</span>
+              </div>
+            </div>
+              
+        </section>
+          
+          <div id="progress">
+            <span id="progress-value">
+                <img class='bx bxs-chevrons-up' src="fast-forward (1).png" alt="">
+              </span>
+            </div>
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script> -->
+      <script>
+        // cursor
+        const trailer = document.getElementById("trailer");
+  window.onmousemove = e => {
+    const x = e.clientX - trailer.offsetWidth / 2,
+          y = e.clientY - trailer.offsetHeight / 2;
+    const keyframes = {
+      transform: `translate(${x}px , ${y}px)`
+    }
+    trailer.animate(keyframes,{
+      duration:800,
+     fill: "forwards"
+  });
+  }
+
+// switch between about buttons 
+
+const buttons = document.querySelectorAll('.about-btn button');
+const contents = document.querySelectorAll('.content');
+
+buttons.forEach((button, index) => {
+  button.addEventListener('click', () => {
+    contents.forEach(content => content.style.display = 'none');
+    contents[index].style.display = 'block';
+    buttons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+  });
+});
+
+
+  // side progress bar 
+
+let calCScrollValue = ()=>{
+  let scrollProgress = document.getElementById("progress");
+  let pos = document.documentElement.scrollTop;
+
+  let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  let scrollValue = Math.round((pos * 100)/calcHeight);
+  
+  if(pos > 100){
+      scrollProgress.style.display = "grid";
+  }else{
+      scrollProgress.style.display = "none";
+  }
+
+  scrollProgress.addEventListener("click",()=>{
+      document.documentElement.scrollTop = 0;
+  });
+
+  scrollProgress.style.background = `conic-gradient(#000 ${scrollValue}%,#474747 ${scrollValue}%)`;
+};
+
+window.onscroll = calCScrollValue;
+window.onload = calCScrollValue;
+      </script>
+</body>
+</html>
