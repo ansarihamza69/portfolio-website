@@ -8,7 +8,7 @@ body{
     color: white;
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
-    /* width: 100vw; */
+    width: 100vw;
     overflow-x: hidden;
 }
 
@@ -16,7 +16,7 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 80px;
+    height: 12vh;
     background-color: #002366;
     /* color: #0f52ba; */
     position: fixed;
@@ -27,33 +27,33 @@ header{
 }
 nav ul{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
 }
 nav ul li{
     list-style: none;
-    margin: 0 23px;
+    /* margin: 0 3rem; */
 }
 
- nav ul li a{
+nav ul li a{
     text-decoration: none;
     color: white;
     list-style: none;
 }
-
- nav ul li a:hover{
+nav ul li a:hover{
     font-size: 1.04rem;
-    color: rgb(243, 237, 237);
+    color: rgb(62, 62, 212);
     
 }
 
-/* main-content{
-    
-}. */
+.logo{
+    height: 14vmin;
+    width: 20vmin;
+}
 
 .main-img{
     margin-top: -8px;
     width: 40%;
-    /* border-radius: 50%; */
     float: right;
     height: 30%;
     margin-right: 40px;
@@ -95,7 +95,7 @@ nav ul li{
     cursor: pointer;
     font-family: Meriweather;
     width: 75px;
-    bottom: 168px;
+    bottom: 145px;
     left: 210px;
 }
 
@@ -109,7 +109,7 @@ nav ul li{
     cursor: pointer;
     font-family: Meriweather;
     width: 75px;
-    bottom: 168px;
+    bottom: 145px;
     left: 88px;
 }
 
